@@ -8,4 +8,4 @@
 
 # Demo
 
-[urlshrink](https://data.kairaishi.com/redirect)
+* try this [urlshrink](https://data.kairaishi.com/redirect)
