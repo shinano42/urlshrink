@@ -1,0 +1,75 @@
+<%- include('shorturl-head'); -%>
+<div class="has-background-link py-6">
+    <div class="container py-6">
+        <section class="pt-6">
+            <h1 class="has-text-white is-size-4-mobile is-size-1-desktop has-text-centered is-family-monospace has-text-weight-bold">
+                YAYOI URL Shortener
+            </h1>
+            <p class="has-text-centered has-text-grey-light is-size-7-mobile mt-3">
+                YAYOI is a free tool to shorten URLs.
+                Make short & memorable links in seconds.
+            </p>
+        </section>
+        <section class="columns is-justify-content-center mx-2 pt-6">
+            <div class="field is-grouped column is-three-quarters">
+                <div class="control is-expanded">
+                  <input class="input source-url" type="text" placeholder="Put Link here">
+                </div>
+                <div class="control">
+                  <a class="button is-primary shorten-btn">
+                    Shorten Link
+                  </a>
+                </div>
+              </div>
+        </section>
+        <div class="short-link-box columns is-justify-content-center mx-2"  style="display: none;">
+            <div class="column is-three-quarters">
+                <div class="field">
+                    <div class="file is-right is-info is-fullwidth">
+                      <label class="file-label">
+                        <span class="file-cta copy-btn">
+                          <span class="file-icon">
+                            <i class="fas fa-copy"></i>
+                          </span>
+                          <span class="file-label">
+                            Copy
+                          </span>
+                        </span>
+                        <span class="file-name has-background-white short-url">
+                          
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="qrcode-box container mt-6 px-6" style="display: none;">
+    <div class="columns is-justify-content-center">
+        <div class="card">
+            <div class="card-content">
+                <figure class="image is-128x128 m-5">
+                    <img class="qrcode" src="https://bulma.io/images/placeholders/128x128.png">
+                </figure>
+                
+                <div class="mt-5">
+                    <a class="button is-info png-download">
+                      Save Image as PNG
+                    </a>
+                </div>
+                <div class="my-3">
+                    <a  class="button is-danger svg-download">
+                      Save Image as SVG
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<%- include('shorturl-footer'); -%>
